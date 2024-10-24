@@ -1,0 +1,21 @@
+[
+    {
+        "pregunta": "Algo que encuentras en una oficina",
+        "respuestas": [
+            {"respuesta": "Computadora", "puntos": 30},
+            {"respuesta": "Escritorio", "puntos": 25},
+            {"respuesta": "Silla", "puntos": 20},
+            {"respuesta": "Teléfono", "puntos": 15},
+            {"respuesta": "Impresora", "puntos": 10}
+        ]
+    },
+    {
+        "pregunta": "Un animal de granja",
+        "respuestas": [
+            {"respuesta": "Vaca", "puntos": 40},
+            {"respuesta": "Gallina", "puntos": 30},
+            {"respuesta": "Cerdo", "puntos": 20},
+            {"respuesta": "Caballo", "puntos": 10}
+        ]
+    }
+]
