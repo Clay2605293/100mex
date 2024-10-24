@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#setup input {
+    padding: 10px;
+    margin: 5px;
+    font-size: 1.2em;
+}
+
+#game {
+    margin-top: 30px;
+}
+
+#tablero {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 20px auto;
+    width: 50%;
+}
+
+.respuesta {
+    background-color: #444;
+    color: white;
+    font-size: 1.5em;
+    padding: 20px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.respuesta:hover {
+    background-color: #666;
+}
+
+#total {
+    margin-top: 20px;
+    font-size: 2em;
+}
