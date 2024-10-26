@@ -1,25 +1,88 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 #setup input {
     padding: 10px;
-    margin: 5px;
     font-size: 1.2em;
 }
 
-#game {
-    margin-top: 30px;
+#game {     
+    width: 100%;
+    background-color: chartreuse;
+    margin-top: 20px;
 }
+
+#wrapper{
+    width: 100%;
+    display: flex;
+    height: 60vh;
+    background-color: darkred;
+    border: 1rem solid white;
+}
+
 
 #tablero {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 10px;
-    margin: 20px auto;
-    width: 50%;
+    gap: 15px;
+    width: 60%;
+}
+
+.equipos{
+    width: 20%;
+    background-color: darkgreen;
 }
 
 .respuesta {
@@ -27,7 +90,6 @@ body {
     color: white;
     font-size: 1.5em;
     padding: 20px;
-    border: 2px solid #fff;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
@@ -37,7 +99,82 @@ body {
     background-color: #666;
 }
 
-#total {
-    margin-top: 20px;
-    font-size: 2em;
+#totalPuntos {
+    font-size: 5em;
+    background-color: aqua;
+    display: block;
+}
+
+
+#strikeOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+#redXContainer {
+    display: flex;
+    gap: 20px;
+    font-size: 200px;
+    color: red;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px black;
+}
+
+.pregunta{
+    font-size: 2.5em;
+    background-color: red;
+}
+
+#SiguienteRonda{
+    margin-top: 40px;
+    padding: 5px;
+    font-size: 2em
+}
+
+/* Estilos para el efecto de volteo */
+.tablero-card {
+    perspective: 1000px;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card.flipped .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-height: 8vh;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    color: white;
+    border-radius: 5px;
+}
+
+.card-front {
+    background-color: #444;
+}
+
+.card-back {
+    background-color: #333;
+    transform: rotateY(180deg);
 }
