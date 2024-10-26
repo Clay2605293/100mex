@@ -7,33 +7,55 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>100 Mexicanos Dijeron</h1>
-
+    
     <div id="setup">
+        <h1>100 Mexicanos Dijeron</h1>
         <input type="text" id="equipo1" placeholder="Nombre del Equipo 1">
         <input type="text" id="equipo2" placeholder="Nombre del Equipo 2">
         <button onclick="iniciarJuego()">Iniciar Juego</button>
     </div>
 
+    <div id="preguntaActual" class="pregunta"></div>
+    
+
+
     <div id="game" style="display: none;">
-        <div id="equipos">
-            <h2 id="nombreEquipo1"></h2>
-            <h2 id="nombreEquipo2"></h2>
+        <span id="totalPuntos">0</span>
+        <div id="wrapper">
+            <div class="equipos">
+                <h1 id="nombreEquipo1"></h1>
+                <h2 id="PuntosEquipo1">0</h2>
+                <button id="AgregarPuntosEquipo1">Agregar Puntos</button>
+                <h2 class="Strikes">Strikes:</h2>
+                <h3 id="StrikesEquipo1">0</h3>
+                <button id="AgregarStrikeEquipo1">Agregar Strike</button>
+            </div>
+
+            <div id="tablero"></div> 
+
+            <div class="equipos">
+                <h1 id="nombreEquipo2"></h1>
+                <h2 id="PuntosEquipo2">0</h2>
+                <button id="AgregarPuntosEquipo2">Agregar Puntos</button>
+                <h2 class="Strikes">Strikes:</h2>
+                <h3 id="StrikesEquipo2">0</h3>
+                <button id="AgregarStrikeEquipo2">Agregar Strike</button>
+            </div>
+
         </div>
 
-        <div id="tablero">
-            <div class="respuesta" id="respuesta1" onclick="mostrarRespuesta(0)"></div>
-            <div class="respuesta" id="respuesta2" onclick="mostrarRespuesta(1)"></div>
-            <div class="respuesta" id="respuesta3" onclick="mostrarRespuesta(2)"></div>
-            <div class="respuesta" id="respuesta4" onclick="mostrarRespuesta(3)"></div>
-            <div class="respuesta" id="respuesta5" onclick="mostrarRespuesta(4)"></div>
-            <div class="respuesta" id="respuesta6" onclick="mostrarRespuesta(5)"></div>
+        <div id="strikeOverlay" style="display: none;">
+            <div id="redXContainer"></div>
         </div>
 
-        <div id="total">
-            <h3>Total: <span id="totalPuntos">0</span> puntos</h3>
-        </div>
+        <audio id="strikeSound" src="strike.mp3" preload="auto"></audio>
+        <audio id="correctAnswerSound" src="ding.mp3" preload="auto"></audio>
+
+        <button id="SiguienteRonda">Siguiente ronda</button>
+
     </div>
+
+    
 
     <script src="app.js"></script>
 </body>
