@@ -19,11 +19,88 @@
         ]
     },
     {
-        "pregunta": "Algo que encuentras en una oficina",
+        "pregunta": "Un color de auto popular",
         "respuestas": [
-            {"respuesta": "Computadora", "puntos": 30},
-            {"respuesta": "Escritorio", "puntos": 25},
-            {"respuesta": "Escritorio", "puntos": 25}
+            {"respuesta": "Negro", "puntos": 35},
+            {"respuesta": "Blanco", "puntos": 30},
+            {"respuesta": "Rojo", "puntos": 20},
+            {"respuesta": "Azul", "puntos": 15}
+        ]
+    },
+    {
+        "pregunta": "Algo que llevas a la playa",
+        "respuestas": [
+            {"respuesta": "Toalla", "puntos": 35},
+            {"respuesta": "Protector solar", "puntos": 22},
+            {"respuesta": "Sombrero", "puntos": 18},
+            {"respuesta": "Gafas de sol", "puntos": 15},
+            {"respuesta": "Traje de baño", "puntos": 10}
+        ]
+    },
+    {
+        "pregunta": "Una fruta tropical",
+        "respuestas": [
+            {"respuesta": "Mango", "puntos": 40},
+            {"respuesta": "Piña", "puntos": 25},
+            {"respuesta": "Coco", "puntos": 20},
+            {"respuesta": "Papaya", "puntos": 15}
+        ]
+    },
+    {
+        "pregunta": "Algo que encuentras en un parque",
+        "respuestas": [
+            {"respuesta": "Banco", "puntos": 30},
+            {"respuesta": "Árbol", "puntos": 25},
+            {"respuesta": "Juegos infantiles", "puntos": 20},
+            {"respuesta": "Sendero", "puntos": 15},
+            {"respuesta": "Fuente", "puntos": 10}
+        ]
+    },
+    {
+        "pregunta": "Algo que usas para cocinar",
+        "respuestas": [
+            {"respuesta": "Olla", "puntos": 30},
+            {"respuesta": "Sartén", "puntos": 25},
+            {"respuesta": "Cuchillo", "puntos": 20},
+            {"respuesta": "Cuchara", "puntos": 15},
+            {"respuesta": "Espátula", "puntos": 10}
+        ]
+    },
+    {
+        "pregunta": "Algo que compras en una pastelería",
+        "respuestas": [
+            {"respuesta": "Pastel", "puntos": 40},
+            {"respuesta": "Galletas", "puntos": 30},
+            {"respuesta": "Pan", "puntos": 20},
+            {"respuesta": "Bollo", "puntos": 10}
+        ]
+    },
+    {
+        "pregunta": "Un deporte popular en el mundo",
+        "respuestas": [
+            {"respuesta": "Fútbol", "puntos": 40},
+            {"respuesta": "Baloncesto", "puntos": 30},
+            {"respuesta": "Tenis", "puntos": 20},
+            {"respuesta": "Voleibol", "puntos": 10}
+        ]
+    },
+    {
+        "pregunta": "Una actividad para relajarse",
+        "respuestas": [
+            {"respuesta": "Leer", "puntos": 35},
+            {"respuesta": "Escuchar música", "puntos": 30},
+            {"respuesta": "Meditar", "puntos": 20},
+            {"respuesta": "Caminar", "puntos": 15}
+        ]
+    },  
+    {
+        "pregunta": "Algo que necesitas para pintar",
+        "respuestas": [
+            {"respuesta": "Pincel", "puntos": 30},
+            {"respuesta": "Pintura", "puntos": 25},
+            {"respuesta": "Lienzo", "puntos": 20},
+            {"respuesta": "Paleta", "puntos": 15},
+            {"respuesta": "Agua", "puntos": 10}
         ]
     }
 ]

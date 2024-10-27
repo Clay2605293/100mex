@@ -5,40 +5,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>100 Mexicanos Dijeron</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+
 </head>
 <body>
     
-    <div id="setup">
-        <h1>100 Mexicanos Dijeron</h1>
-        <input type="text" id="equipo1" placeholder="Nombre del Equipo 1">
-        <input type="text" id="equipo2" placeholder="Nombre del Equipo 2">
-        <button onclick="iniciarJuego()">Iniciar Juego</button>
+    <div id="setupWrapper">
+        <div id="setup">
+            <h1>100 Mexicanos Dijeron</h1>
+            <label for="equipo1">Nombre del equipo 1:</label>
+            <input type="text" id="equipo1" class="blockSetup" placeholder="Equipo 1" maxlength="14">
+            <label for="equipo2">Nombre del equipo 2:</label>
+            <input type="text" id="equipo2" class="blockSetup" placeholder="Equipo 2" maxlength="14">
+            <label for="puntajeObjetivo">Puntaje para ganar:</label>
+            <input type="number" id="puntajeObjetivo" class="blockSetup" placeholder="Ej: 100">            
+            <button onclick="iniciarJuego()" class="blockSetup">Iniciar Juego</button>
+        </div>
     </div>
 
-    <div id="preguntaActual" class="pregunta"></div>
+    <div id="transitionScreen" class="transition" style="display: none;">
+        <h1 id="roundNumber"></h1>
+    </div>
     
 
 
     <div id="game" style="display: none;">
+        <div id="preguntaActual" class="pregunta">¡Bienvenidos al juego!</div>
         <span id="totalPuntos">0</span>
         <div id="wrapper">
             <div class="equipos">
                 <h1 id="nombreEquipo1"></h1>
                 <h2 id="PuntosEquipo1">0</h2>
-                <button id="AgregarPuntosEquipo1">Agregar Puntos</button>
-                <h2 class="Strikes">Strikes:</h2>
-                <h3 id="StrikesEquipo1">0</h3>
+                <div id="StrikesEquipo1" class="strike-container">
+                    <span class="strike">X</span>
+                    <span class="strike">X</span>
+                    <span class="strike">X</span>
+                </div>
                 <button id="AgregarStrikeEquipo1">Agregar Strike</button>
             </div>
 
-            <div id="tablero"></div> 
+            <div id="tablero">
+                <div class="respuesta" id="respuesta1">
+                    <div class="card-inner">
+                        <div class="card-front" id="respuestaText1"></div>
+                        <div class="card-back" id="puntos1"></div>
+                    </div>
+                </div>
+
+                <div class="respuesta" id="respuesta2">
+                    <div class="card-inner">
+                        <div class="card-front" id="respuestaText2"></div> 
+                        <div class="card-back" id="puntos2"></div>
+                    </div>
+                </div>
+            
+                <div class="respuesta" id="respuesta3">
+                    <div class="card-inner">
+                        <div class="card-front" id="respuestaText3"></div> 
+                        <div class="card-back" id="puntos3"></div>
+                    </div>
+                </div>
+
+                <div class="respuesta" id="respuesta4">
+                    <div class="card-inner">
+                        <div class="card-front" id="respuestaText4"></div> 
+                        <div class="card-back" id="puntos4"></div>
+                    </div>
+                </div>
+            
+                <div class="respuesta" id="respuesta5">
+                    <div class="card-inner">
+                        <div class="card-front" id="respuestaText5"></div> 
+                        <div class="card-back" id="puntos5"></div>
+                    </div>
+                </div>
+
+                <div class="respuesta" id="respuesta6">
+                    <div class="card-inner">
+                        <div class="card-front" id="respuestaText6"></div> 
+                        <div class="card-back" id="puntos6"></div>
+                    </div>
+                </div>
+            
+                <div class="respuesta" id="respuesta7">
+                    <div class="card-inner">
+                        <div class="card-front" id="respuestaText7"></div> 
+                        <div class="card-back" id="puntos7"></div>
+                    </div>
+                </div>
+            
+                
+            
+            
+                <div class="respuesta" id="respuesta8">
+                    <div class="card-inner">
+                        <div class="card-front" id="respuestaText8"></div> 
+                        <div class="card-back" id="puntos8"></div>
+                    </div>
+                </div>
+            </div>
+            
+            
 
             <div class="equipos">
                 <h1 id="nombreEquipo2"></h1>
                 <h2 id="PuntosEquipo2">0</h2>
-                <button id="AgregarPuntosEquipo2">Agregar Puntos</button>
-                <h2 class="Strikes">Strikes:</h2>
-                <h3 id="StrikesEquipo2">0</h3>
+                <div id="StrikesEquipo2" class="strike-container">
+                    <span class="strike">X</span>
+                    <span class="strike">X</span>
+                    <span class="strike">X</span>
+                </div>
                 <button id="AgregarStrikeEquipo2">Agregar Strike</button>
             </div>
 
@@ -49,11 +125,24 @@
         </div>
 
         <audio id="strikeSound" src="strike.mp3" preload="auto"></audio>
+        <audio id="jugarSound" src="Jugar.mp3" preload="auto"></audio>
+        <audio id="triunfoSound" src="triunfo.mp3" preload="auto"></audio>
         <audio id="correctAnswerSound" src="ding.mp3" preload="auto"></audio>
 
-        <button id="SiguienteRonda">Siguiente ronda</button>
+        <div id="contenedorBotones">
+            <button id="AgregarPuntosEquipo1"></button>   
+            <button id="SiguienteRonda">Siguiente ronda</button>
+            <button id="AgregarPuntosEquipo2"></button>
+        </div>
+       
 
     </div>
+
+    <div id="ganadorPantalla" class="ganadorPantalla" style="display: none;">
+        <h1></h1>
+        <button onclick="reiniciarJuego()">Reiniciar juego</button>
+    </div>
+    
 
     
 
