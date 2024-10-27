@@ -88,7 +88,7 @@
         "pregunta": "Una actividad para relajarse",
         "respuestas": [
             {"respuesta": "Leer", "puntos": 35},
-            {"respuesta": "Escuchar música", "puntos": 30},
+            {"respuesta": "Escuchar música clásica", "puntos": 30},
             {"respuesta": "Meditar", "puntos": 20},
             {"respuesta": "Caminar", "puntos": 15}
         ]

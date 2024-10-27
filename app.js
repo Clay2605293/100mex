@@ -109,17 +109,22 @@ function mostrarPregunta() {
             // Coloca la respuesta y los puntos en el card-back
             puntosDiv.textContent = `${respuesta.respuesta} - ${respuesta.puntos} puntos`;
 
-            // Configurar la tarjeta para voltear al hacer clic
+            // Configurar la tarjeta para voltear al hacer clic y desactivar el clic después de destaparla
             respuestaDiv.onclick = () => {
-                const isFlipped = respuestaDiv.classList.toggle("flipped");
+                // Solo ejecutar si no está ya destapada
+                if (!respuestaDiv.classList.contains("flipped")) {
+                    respuestaDiv.classList.add("flipped");
+                    puntosDiv.style.display = 'block'; // Mostrar los puntos de la respuesta
+                    document.getElementById('correctAnswerSound').play();
 
-                // Reproducir sonido de respuesta correcta y verificar si se suman puntos
-                document.getElementById('correctAnswerSound').play();
+                    // Sumar puntos solo si no se han asignado en esta ronda
+                    if (!puntosAsignados) {
+                        puntajeTotal += respuesta.puntos;
+                        document.getElementById('totalPuntos').textContent = puntajeTotal;
+                    }
 
-                // Sumar puntos solo si no se han asignado en esta ronda
-                if (isFlipped && !puntosAsignados) {
-                    puntajeTotal += respuesta.puntos;
-                    document.getElementById('totalPuntos').textContent = puntajeTotal;
+                    // Desactivar el clic en la tarjeta para que no cuente puntos dobles
+                    respuestaDiv.onclick = null;
                 }
             };
         } else {
@@ -132,6 +137,7 @@ function mostrarPregunta() {
         }
     });
 }
+
 
 
 
@@ -361,8 +367,3 @@ function reiniciarJuego() {
 
     console.log("Juego reiniciado. Preguntas restantes:", preguntasDisponibles.map(p => p.pregunta));
 }
-
-
-
-
-
