@@ -1,2 +1,2 @@
 # 100mex
-100mex React
+100mex
