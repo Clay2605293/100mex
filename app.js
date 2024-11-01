@@ -367,3 +367,24 @@ function reiniciarJuego() {
 
     console.log("Juego reiniciado. Preguntas restantes:", preguntasDisponibles.map(p => p.pregunta));
 }
+
+function mostrarStrikeTemporal() {
+    const overlay = document.getElementById('strikeOverlay');
+    const redXContainer = document.getElementById('redXContainer');
+    redXContainer.innerHTML = ''; // Limpia cualquier "X" existente
+
+    // Agrega una sola "X" para el strike temporal
+    const xElement = document.createElement('span');
+    xElement.textContent = 'X';
+    redXContainer.appendChild(xElement);
+
+    overlay.style.display = 'flex';
+
+    // Oculta el strike después de un breve momento (1 segundo)
+    setTimeout(() => {
+        overlay.style.display = 'none';
+    }, 1000);
+
+    // Reproduce el sonido de strike
+    document.getElementById('strikeSound').play();
+}

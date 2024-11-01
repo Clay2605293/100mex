@@ -102,5 +102,263 @@
             {"respuesta": "Paleta", "puntos": 15},
             {"respuesta": "Agua", "puntos": 10}
         ]
+    },
+    {
+        "pregunta": "¿Qué es lo primero que haces al despertar?",
+        "respuestas": [
+            {"respuesta": "Apagar la alarma", "puntos": 25},
+            {"respuesta": "Ir al baño", "puntos": 15},
+            {"respuesta": "Mirar el teléfono", "puntos": 12},
+            {"respuesta": "Preparar café", "puntos": 12},
+            {"respuesta": "Cepillarse los dientes", "puntos": 10},
+            {"respuesta": "Hacer ejercicio", "puntos": 10},
+            {"respuesta": "Tomar agua", "puntos": 8},
+            {"respuesta": "Vestirse", "puntos": 8}
+        ]
+    },
+    {
+        "pregunta": "¿Qué animal representa a alguien perezoso?",
+        "respuestas": [
+            {"respuesta": "Perezoso", "puntos": 30},
+            {"respuesta": "Tortuga", "puntos": 20},
+            {"respuesta": "Gato", "puntos": 15},
+            {"respuesta": "Oso", "puntos": 12},
+            {"respuesta": "Koala", "puntos": 10},
+            {"respuesta": "Vaca", "puntos": 8},
+            {"respuesta": "Perro", "puntos": 5}
+        ]
+    },
+    {
+        "pregunta": "¿Qué objeto llevas siempre en tu bolsa o mochila?",
+        "respuestas": [
+            {"respuesta": "Teléfono", "puntos": 25},
+            {"respuesta": "Llaves", "puntos": 20},
+            {"respuesta": "Cartera", "puntos": 15},
+            {"respuesta": "Cargador", "puntos": 10},
+            {"respuesta": "Pañuelos", "puntos": 8},
+            {"respuesta": "Lápiz/lapicera", "puntos": 8},
+            {"respuesta": "Agua", "puntos": 7},
+            {"respuesta": "Desinfectante de manos", "puntos": 7}
+        ]
+    },
+    {
+        "pregunta": "¿Qué haces para relajarte?",
+        "respuestas": [
+            {"respuesta": "Ver televisión", "puntos": 20},
+            {"respuesta": "Escuchar música", "puntos": 15},
+            {"respuesta": "Leer", "puntos": 15},
+            {"respuesta": "Salir a caminar", "puntos": 12},
+            {"respuesta": "Dormir", "puntos": 10},
+            {"respuesta": "Meditar", "puntos": 8},
+            {"respuesta": "Jugar videojuegos", "puntos": 10},
+            {"respuesta": "Hacer ejercicio", "puntos": 10}
+        ]
+    },
+    {
+        "pregunta": "¿Qué sabor de helado es el más popular?",
+        "respuestas": [
+            {"respuesta": "Chocolate", "puntos": 25},
+            {"respuesta": "Vainilla", "puntos": 20},
+            {"respuesta": "Fresa", "puntos": 15},
+            {"respuesta": "Cookies & Cream", "puntos": 10},
+            {"respuesta": "Menta con chocolate", "puntos": 10},
+            {"respuesta": "Pistache", "puntos": 8},
+            {"respuesta": "Mango", "puntos": 7},
+            {"respuesta": "Limón", "puntos": 5}
+        ]
+    },
+    {
+        "pregunta": "¿Cuál es el ingrediente principal en una ensalada?",
+        "respuestas": [
+            {"respuesta": "Lechuga", "puntos": 25},
+            {"respuesta": "Tomate", "puntos": 15},
+            {"respuesta": "Pepino", "puntos": 12},
+            {"respuesta": "Aguacate", "puntos": 10},
+            {"respuesta": "Aceitunas", "puntos": 10},
+            {"respuesta": "Queso", "puntos": 10},
+            {"respuesta": "Zanahoria", "puntos": 10},
+            {"respuesta": "Cebolla", "puntos": 8}
+        ]
+    },
+    {
+        "pregunta": "¿Qué país te gustaría visitar?",
+        "respuestas": [
+            {"respuesta": "Francia", "puntos": 20},
+            {"respuesta": "Italia", "puntos": 18},
+            {"respuesta": "Japón", "puntos": 15},
+            {"respuesta": "España", "puntos": 12},
+            {"respuesta": "Estados Unidos", "puntos": 10},
+            {"respuesta": "Egipto", "puntos": 10},
+            {"respuesta": "Brasil", "puntos": 8},
+            {"respuesta": "Grecia", "puntos": 7}
+        ]
+    },
+    {
+        "pregunta": "¿Qué palabra describe un día perfecto?",
+        "respuestas": [
+            {"respuesta": "Soleado", "puntos": 25},
+            {"respuesta": "Feliz", "puntos": 15},
+            {"respuesta": "Relajado", "puntos": 15},
+            {"respuesta": "Tranquilo", "puntos": 13},
+            {"respuesta": "Productivo", "puntos": 12},
+            {"respuesta": "Emocionante", "puntos": 10},
+            {"respuesta": "Divertido", "puntos": 10}
+        ]
+    },
+    {
+        "pregunta": "¿Qué haces cuando hace mucho calor?",
+        "respuestas": [
+            {"respuesta": "Ir a la playa", "puntos": 25},
+            {"respuesta": "Nadar", "puntos": 20},
+            {"respuesta": "Beber agua fría", "puntos": 15},
+            {"respuesta": "Comer helado", "puntos": 10},
+            {"respuesta": "Usar ventilador/aire acondicionado", "puntos": 10},
+            {"respuesta": "Quedarse en casa", "puntos": 8},
+            {"respuesta": "Vestirse ligero", "puntos": 7},
+            {"respuesta": "Ir a lugares frescos", "puntos": 5}
+        ]
+    },
+    {
+        "pregunta": "¿Qué celebras con una fiesta grande?",
+        "respuestas": [
+            {"respuesta": "Boda", "puntos": 25},
+            {"respuesta": "Cumpleaños", "puntos": 20},
+            {"respuesta": "Año Nuevo", "puntos": 15},
+            {"respuesta": "Graduación", "puntos": 10},
+            {"respuesta": "Navidad", "puntos": 10},
+            {"respuesta": "Quinceañera", "puntos": 8},
+            {"respuesta": "Bautizo", "puntos": 7},
+            {"respuesta": "Aniversario", "puntos": 5}
+        ]
+    },
+    {
+        "pregunta": "¿Qué haces en tus vacaciones?",
+        "respuestas": [
+            {"respuesta": "Viajar", "puntos": 25},
+            {"respuesta": "Descansar", "puntos": 18},
+            {"respuesta": "Ir a la playa", "puntos": 15},
+            {"respuesta": "Conocer lugares nuevos", "puntos": 12},
+            {"respuesta": "Pasar tiempo en familia", "puntos": 10},
+            {"respuesta": "Ir de compras", "puntos": 8},
+            {"respuesta": "Hacer deporte", "puntos": 6},
+            {"respuesta": "Visitar museos", "puntos": 6}
+        ]
+    },
+    {
+        "pregunta": "¿Qué superhéroe es el más famoso?",
+        "respuestas": [
+            {"respuesta": "Superman", "puntos": 20},
+            {"respuesta": "Batman", "puntos": 18},
+            {"respuesta": "Spider-Man", "puntos": 15},
+            {"respuesta": "Iron Man", "puntos": 12},
+            {"respuesta": "Wonder Woman", "puntos": 10},
+            {"respuesta": "Capitán América", "puntos": 10},
+            {"respuesta": "Hulk", "puntos": 8},
+            {"respuesta": "Thor", "puntos": 7}
+        ]
+    },
+    {
+        "pregunta": "¿Qué fruta es la favorita de muchos?",
+        "respuestas": [
+            {"respuesta": "Manzana", "puntos": 20},
+            {"respuesta": "Plátano", "puntos": 18},
+            {"respuesta": "Sandía", "puntos": 15},
+            {"respuesta": "Fresa", "puntos": 12},
+            {"respuesta": "Naranja", "puntos": 10},
+            {"respuesta": "Mango", "puntos": 10},
+            {"respuesta": "Uva", "puntos": 8},
+            {"respuesta": "Piña", "puntos": 7}
+        ]
+    },
+    {
+        "pregunta": "¿Qué comida es típica en Navidad?",
+        "respuestas": [
+            {"respuesta": "Pavo", "puntos": 25},
+            {"respuesta": "Romeritos", "puntos": 15},
+            {"respuesta": "Bacalao", "puntos": 15},
+            {"respuesta": "Ensalada de manzana", "puntos": 10},
+            {"respuesta": "Ponche", "puntos": 10},
+            {"respuesta": "Tamales", "puntos": 10},
+            {"respuesta": "Pozole", "puntos": 8},
+            {"respuesta": "Lomo", "puntos": 7}
+        ]
+    },
+    {
+        "pregunta": "¿Cuál es un deporte que casi todos practican?",
+        "respuestas": [
+            {"respuesta": "Fútbol", "puntos": 30},
+            {"respuesta": "Básquetbol", "puntos": 15},
+            {"respuesta": "Natación", "puntos": 12},
+            {"respuesta": "Correr", "puntos": 10},
+            {"respuesta": "Ciclismo", "puntos": 10},
+            {"respuesta": "Tenis", "puntos": 8},
+            {"respuesta": "Yoga", "puntos": 8},
+            {"respuesta": "Gimnasia", "puntos": 7}
+        ]
+    },
+    {
+        "pregunta": "¿Qué haces cuando estás aburrido?",
+        "respuestas": [
+            {"respuesta": "Ver televisión", "puntos": 20},
+            {"respuesta": "Escuchar música", "puntos": 15},
+            {"respuesta": "Salir a pasear", "puntos": 13},
+            {"respuesta": "Jugar videojuegos", "puntos": 12},
+            {"respuesta": "Dormir", "puntos": 10},
+            {"respuesta": "Leer", "puntos": 10},
+            {"respuesta": "Navegar en internet", "puntos": 10},
+            {"respuesta": "Llamar a amigos", "puntos": 10}
+        ]
+    },
+    {
+        "pregunta": "¿Qué palabra asocias con el verano?",
+        "respuestas": [
+            {"respuesta": "Calor", "puntos": 25},
+            {"respuesta": "Playa", "puntos": 18},
+            {"respuesta": "Sol", "puntos": 15},
+            {"respuesta": "Vacaciones", "puntos": 12},
+            {"respuesta": "Helado", "puntos": 10},
+            {"respuesta": "Arena", "puntos": 10},
+            {"respuesta": "Diversión", "puntos": 8},
+            {"respuesta": "Descanso", "puntos": 2}
+        ]
+    },
+    {
+        "pregunta": "¿Qué trabajo crees que es el más difícil?",
+        "respuestas": [
+            {"respuesta": "Médico", "puntos": 20},
+            {"respuesta": "Maestro", "puntos": 18},
+            {"respuesta": "Bombero", "puntos": 15},
+            {"respuesta": "Policía", "puntos": 12},
+            {"respuesta": "Ingeniero", "puntos": 10},
+            {"respuesta": "Obrero de construcción", "puntos": 10},
+            {"respuesta": "Enfermero", "puntos": 8},
+            {"respuesta": "Piloto", "puntos": 7}
+        ]
+    },
+    {
+        "pregunta": "¿Qué animal es el símbolo de la fuerza?",
+        "respuestas": [
+            {"respuesta": "León", "puntos": 25},
+            {"respuesta": "Elefante", "puntos": 20},
+            {"respuesta": "Tigre", "puntos": 15},
+            {"respuesta": "Oso", "puntos": 12},
+            {"respuesta": "Águila", "puntos": 10},
+            {"respuesta": "Toro", "puntos": 8},
+            {"respuesta": "Gorila", "puntos": 5},
+            {"respuesta": "Tiburón", "puntos": 5}
+        ]
+    },
+    {
+        "pregunta": "¿Qué cosa compras siempre en el supermercado?",
+        "respuestas": [
+            {"respuesta": "Leche", "puntos": 20},
+            {"respuesta": "Pan", "puntos": 18},
+            {"respuesta": "Huevos", "puntos": 15},
+            {"respuesta": "Frutas", "puntos": 12},
+            {"respuesta": "Verduras", "puntos": 10},
+            {"respuesta": "Carne", "puntos": 10},
+            {"respuesta": "Arroz", "puntos": 8},
+            {"respuesta": "Jabón", "puntos": 7}
+        ]
     }
 ]

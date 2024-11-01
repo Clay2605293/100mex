@@ -118,7 +118,7 @@ body.flash, #preguntaActual.flash {
   color: whitesmoke;
 }
 
-#setup button, #SiguienteRonda, #AgregarPuntosEquipo1, #AgregarPuntosEquipo2, #AgregarStrikeEquipo1, #AgregarStrikeEquipo2 {
+#setup button, #SiguienteRonda, #AgregarPuntosEquipo1, #AgregarPuntosEquipo2, #AgregarStrikeEquipo1, #AgregarStrikeEquipo2, #MostrarStrike {
   background-color: rgb(251,182,31);
   color: rgb(12,15,46);
   font-size: 1.3rem;
