@@ -1,0 +1,5 @@
+# Ignore vscode settings for workspace
+.vscode/
+
+# Ignore ds store
+.DS_Store
